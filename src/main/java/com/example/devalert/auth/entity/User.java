@@ -20,9 +20,11 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
 
+    @Setter
     @Column(name = "password_hash", nullable = false)
     private String passwordHash;
 
+    @Setter
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role;
