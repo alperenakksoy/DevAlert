@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @Table(name = "alerts_sent")
-public class AlertSent {
+public class AlertsSent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
