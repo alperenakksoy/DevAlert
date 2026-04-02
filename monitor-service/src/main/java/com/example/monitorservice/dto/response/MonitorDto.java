@@ -1,4 +1,4 @@
-package com.example.monitorservice.dto;
+package com.example.monitorservice.dto.response;
 
 import java.time.LocalDateTime;
 

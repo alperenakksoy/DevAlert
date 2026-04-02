@@ -1,4 +1,4 @@
-package com.example.monitorservice.dto;
+package com.example.monitorservice.dto.request;
 
 public record CreateMonitorRequest(
         String name,

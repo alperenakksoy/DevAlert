@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface MonitorRepository extends JpaRepository<@NonNull Monitor,@NonNull Long> {
 
@@ -15,5 +16,8 @@ public interface MonitorRepository extends JpaRepository<@NonNull Monitor,@NonNu
             "(last_checked_at IS NULL OR last_checked_at + (interval_minutes * interval '1 minute') <= NOW())",
             nativeQuery = true)
     List<Monitor> findDueForCheck();
+
+    Optional<Monitor> findByIdAndUserId(Long monitorId, Long userId);
+
 
 }

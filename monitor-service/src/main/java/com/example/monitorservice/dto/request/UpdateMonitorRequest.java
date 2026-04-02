@@ -1,9 +1,9 @@
-package com.example.monitorservice.dto;
+package com.example.monitorservice.dto.request;
 
 public record UpdateMonitorRequest(
         String name,
         String url,
         Integer intervalMinutes,
         Integer threshold,
-        boolean isActive
+        Boolean isActive
 ) {}
