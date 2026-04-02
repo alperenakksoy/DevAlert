@@ -1,4 +1,4 @@
-package com.example.devalert.auth.service;
+package com.example.monitorservice.service;
 
 import com.example.devalert.auth.entity.User;
 import io.jsonwebtoken.Claims;
